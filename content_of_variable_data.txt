@@ -1,0 +1,50 @@
+Index	Variable	Source
+		
+1	Age (kyr)	Age model		
+2	PC1	Chew Bahir Chew Bahir MSCL Col Ref		
+3	PC2	Chew Bahir MSCL Col Ref		
+4	PC3	Chew Bahir MSCL Col Ref		
+5	PC4	Chew Bahir MSCL Col Ref		
+6	PC5	Chew Bahir MSCL Col Ref		
+7	Al	Chew Bahir XRF		
+8	Ba	Chew Bahir XRF
+9	Ca	Chew Bahir XRF
+10	Cl	Chew Bahir XRF
+11	Fe	Chew Bahir XRF
+12	K	Chew Bahir XRF
+13	Mn	Chew Bahir XRF
+14	Rb	Chew Bahir XRF
+15	S	Chew Bahir XRF
+16	Si	Chew Bahir XRF
+17	Sr	Chew Bahir XRF
+18	Ti	Chew Bahir XRF
+19	Zr	Chew Bahir XRF
+20	Ones	Chew Bahir XRF		
+21	PC1 Detritus	ODP 967 Grant et al. 2017	
+22	PC2 Detritus	ODP 967 Grant et al. 2017	
+23	Dust Proxy	ODP 967 Grant et al. 2017	
+24	Wetness Idx	ODP 967 Grant et al. 2017	
+25	Ca	IDCP Malawi Johnson et al. 2016		
+26	d13C	IDCP Malawi Johnson et al. 2016
+27	Lake Level	IDCP Malawi Johnson et al. 2016	
+28	Eccentricity	Laskar et al. 2004	
+29	Precession	Laskar et al. 2004	
+30	Obliquity	Laskar et al. 2004	
+31	Smectite Group	Chew Bahir Foerster	
+32	Illite Group	Chew Bahir Foerster	
+33	Analcime Group	Chew Bahir Foerster	
+34	Analcime Intensity	Chew Bahir Foerster	
+35	Smectite Inv Group	Chew Bahir Foerster		
+36	Mag Sus	Chew Bahir LacCore		
+37	Grainsize EM1	Chew Bahir Schaebitz
+38	Grainsize EM2	Chew Bahir Schaebitz	
+39	Grainsize EM3	Chew Bahir Schaebitz	
+40	Grainsize EM4	Chew Bahir Schaebitz	
+41	Grainsize EM5	Chew Bahir Schaebitz	
+42	Grainsize Mean	Chew Bahir Schaebitz	
+43	TC	Chew Bahir Schaebitz	
+44	TIC	Chew Bahir Schaebitz	
+45	TOC	Chew Bahir Schaebitz	
+46	EPICA CO2	Bereiter et al. 2015		
+47	ODP 722 SST	Herbert et al. 2010
+48	Poaceae %	ICDP Bosumtwi Miller et al. 2016
