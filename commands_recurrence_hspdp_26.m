@@ -7,18 +7,18 @@
 % 24 Oct 2019 - Trauth
 
 % Clear workspace, clear command window and close figure windows
-clear, clc, close all
+clear, clc, %close all
 
 % Select variable to be analyzed from content_of_variable_data.txt.
-varselectnum = 12;
+varselectnum = 9;
 varselectdem = 20;
 
 % Definition of parameter values.
-agemodeloption = 6;     % Choose age model:
+agemodeloption = 1;     % Choose age model:
                         % 1=mubawa,2=oxcal,3-5 trauth 550-70, 6-8 merge
                         % oxcal+trauth 500/550/570
 agemodelmin = 1;        % Minimum age (in kyrs).
-agemodelmax = 570;      % Maximum age (in kyrs).
+agemodelmax = 630;      % Maximum age (in kyrs).
 agemodelres = 0.1;      % Resolution of time axis (in kyrs).
 inttype = 'pchip';      % Interpolation method.
 
@@ -59,7 +59,7 @@ filterorder  = 5;
 filtercutoff = 0.1;
 
 % Define embedding dimension m and time delay tau.
-m = 1;
+m = 4;
 tau = 1;
 timespan_diff = tau*(m-1);
 
