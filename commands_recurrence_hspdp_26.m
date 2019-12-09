@@ -14,11 +14,11 @@ varselectnum = 9;
 varselectdem = 20;
 
 % Definition of parameter values.
-<<<<<<< HEAD
-agemodeloption = 1;     % Choose age model:
-=======
+
+
+
 agemodeloption = 1;     % Choose age model: 
->>>>>>> 14220cce2bcd3e44513816ead8efa62955e0747b
+
                         % 1=mubawa,2=oxcal,3-5 trauth 550-70, 6-8 merge
                         % oxcal+trauth 500/550/570
 agemodelmin = 1;        % Minimum age (in kyrs).
