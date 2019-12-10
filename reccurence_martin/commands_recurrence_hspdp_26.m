@@ -10,7 +10,7 @@
 clear, clc, %close all
 
 % Select variable to be analyzed from content_of_variable_data.txt.
-varselectnum = 9;
+varselectnum = 36;
 varselectdem = 20;
 
 % Definition of parameter values.

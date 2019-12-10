@@ -1,4 +1,4 @@
-Index	Variable	Source
+ Index	Variable	Source
 		
 1	Age (kyr)	Age model		
 2	PC1	Chew Bahir Chew Bahir MSCL Col Ref		
