@@ -81,7 +81,7 @@ function [Z1,Z2,DM] = rqaplot(varargin)
 %                           euclidic.
 % 'RQA-quantity'            defines which RQA-measurement is shown in the
 %                           output figures
-% 'window-shape'            If set to 1, the RQA is based on a 45ï¿½-rotated 
+% 'window-shape'            If set to 1, the RQA is based on a 45°-rotated 
 %                           window. Default is 0.
 % 'line_correct'            Optional input 'line_correct' can be used in 
 %                           border to correct for border effects while 
@@ -130,7 +130,7 @@ function [Z1,Z2,DM] = rqaplot(varargin)
 %
 %
 % Copyright (c) 2017
-% Hauke Krï¿½mer, 
+% Hauke Krämer, 
 % Potsdam Institute for Climate Impact Research, Germany
 % http://www.pik-potsdam.de
 % Insitute of Environmental and Earth Science, University of Potsdam,
@@ -294,7 +294,7 @@ end
 
 % check input variabel windowshape, if it is 0 or 1
 if windowshape ~= 0 && rem(windowshape,1)~=1
-    error('Window shape input parameter must be set to 0 (Default setting, corresponds to normal window shape) or 1 (45ï¿½ rotated window)')
+    error('Window shape input parameter must be set to 0 (Default setting, corresponds to normal window shape) or 1 (45° rotated window)')
 end
 
 
@@ -451,12 +451,12 @@ if runningwindow == 0
         cnt2 = 1;                          % counter. -> index for storing RQA-measures
                                            % for each window-movement. 
 
-        for startwert = 1:ws_new:length(R)-w_new+1 % Spalten-Startwert(e) fï¿½r RP-Bildausschnitt 
+        for startwert = 1:ws_new:length(R)-w_new+1 % Spalten-Startwert(e) für RP-Bildausschnitt 
                                                     % setzen.
 
-            RP_Ausschnitt=zeros(w_new,w_new);  % leere Matrix mit Kantenlï¿½nge w machen. 
+            RP_Ausschnitt=zeros(w_new,w_new);  % leere Matrix mit Kantenlänge w machen. 
                                                % Hierein soll nun der RP-Ausschnitt
-                                               % kommen. Danach wird diese fï¿½r die RQA
+                                               % kommen. Danach wird diese für die RQA
                                                % verwendet.
 
             flag = false;
@@ -467,16 +467,16 @@ if runningwindow == 0
             % der neuen Fensterform liegen.
 
             j2=1;                                   % Spaltenindex des RP_Auschnitt
-            for j = startwert:startwert+w_new-1     % Spalten wï¿½hlen
-                % Zeilen wï¿½hlen
+            for j = startwert:startwert+w_new-1     % Spalten wählen
+                % Zeilen wählen
                 i2=round(w_new/2)-counter;          % Zeilenindex des RP_Ausschnitt
                 for i = (startwert+round(w_new/2)-counter):(startwert+round(w_new/2)+counter)
-                    RP_Ausschnitt(i2,j2)=R(i,j);    % Werte ï¿½bernehmen
+                    RP_Ausschnitt(i2,j2)=R(i,j);    % Werte übernehmen
                     i2=i2+1;                        % Zeilenindex des RP_Ausschnitt anpassen
                 end
 
                 % wegen rautenform : auf maxcounter achten und dann mit dem
-                % zeilenindex, welcher ï¿½ber counter gesteuert wird, wieder
+                % zeilenindex, welcher über counter gesteuert wird, wieder
                 % heruntergehen.
                 if counter == maxcounter
                     flag = true;
@@ -489,13 +489,13 @@ if runningwindow == 0
                 if flag == true
                     counter = counter - 1;
                 end
-                j2=j2+1;                % Spaltenindex des RP-Ausschnitts erhï¿½hen
+                j2=j2+1;                % Spaltenindex des RP-Ausschnitts erhöhen
             end
             % RQA machen
             r_win2(1:18,cnt2)=rqa2(RP_Ausschnitt,L,T);
 
 
-            % Spaltencounter der RQA's erhï¿½hen
+            % Spaltencounter der RQA's erhöhen
             cnt2=cnt2+1;
 
         end
@@ -749,9 +749,9 @@ elseif runningwindow == 1
                end   
                DM{cnt2+1} = P;
 
-               RP_Ausschnitt=zeros(w_new,w_new);  % leere Matrix mit Kantenlï¿½nge w machen. 
+               RP_Ausschnitt=zeros(w_new,w_new);  % leere Matrix mit Kantenlänge w machen. 
                                                    % Hierein soll nun der RP-Ausschnitt
-                                                   % kommen. Danach wird diese fï¿½r die RQA
+                                                   % kommen. Danach wird diese für die RQA
                                                    % verwendet.
 
               flag = false;
@@ -762,16 +762,16 @@ elseif runningwindow == 1
               % der neuen Fensterform liegen.
 
             j2=1;                                   % Spaltenindex des RP_Auschnitt
-            for j = 1:w_new-1     % Spalten wï¿½hlen
-                % Zeilen wï¿½hlen
+            for j = 1:w_new-1     % Spalten wählen
+                % Zeilen wählen
                 i2=round(w_new/2)-counter;          % Zeilenindex des RP_Ausschnitt
                 for k = (round(w_new/2)-counter):(round(w_new/2)+counter)
-                    RP_Ausschnitt(i2,j2)=R(k,j);    % Werte ï¿½bernehmen
+                    RP_Ausschnitt(i2,j2)=R(k,j);    % Werte übernehmen
                     i2=i2+1;                        % Zeilenindex des RP_Ausschnitt anpassen
                 end
 
                 % wegen rautenform : auf maxcounter achten und dann mit dem
-                % zeilenindex, welcher ï¿½ber counter gesteuert wird, wieder
+                % zeilenindex, welcher über counter gesteuert wird, wieder
                 % heruntergehen.
                 if counter == maxcounter
                     flag = true;
@@ -784,7 +784,7 @@ elseif runningwindow == 1
                 if flag == true
                     counter = counter - 1;
                 end
-                j2=j2+1;                % Spaltenindex des RP-Ausschnitts erhï¿½hen
+                j2=j2+1;                % Spaltenindex des RP-Ausschnitts erhöhen
             end
 
             r_win2(:,cnt2) = rqa2(RP_Ausschnitt,L,T);
@@ -1534,7 +1534,7 @@ function y = rqa(varargin)
 % Norbert Marwan, Potsdam Institute for Climate Impact Research, Germany
 % http://www.pik-potsdam.de
 %
-% Modified by Hauke Krï¿½mer, Potsdam Institute for Climate Impact Research,
+% Modified by Hauke Krämer, Potsdam Institute for Climate Impact Research,
 % Germany
 %
 % This program is free software; you can redistribute it and/or
@@ -2679,234 +2679,4 @@ y = reshape(x(jx),NX,m);
 end
 
 
-function [y,P,epsilon] = rp(varargin)
-%
-% Minimum input-arguments : 2
-% Maximum input-arguments : 6
-%
-%    [R,DM,epsilon] = rp(Y,E,thres_calc,norm,type,algorithm) 
-%    
-%    Calculates a recurrence plot R from an embedding vector Y and using 
-%    the threshold 'E'. 'DM' is an optional output and is the adjacency- or
-%    distancematrix. In case you choose the 'var'-fixed threshold selection
-%    method optional output 'epsilon' will give the actual calculated
-%    value.
-%
-%
-% Input:
-%
-% 'Y'                       is a N-by-M matrix corresponding to N time points
-%                           and M embedding dimensions.
-%
-% 'norm' (optional)         norm for distance calculation in phasespace to
-%                           'euc' (euclidic) or 'max' (maximum). Default is 
-%                           max norm.
-%
-% 'algorithm' (optional)    specify the way of calculating the distance
-%                           matrix here. You can choose from
-%                           ['loops','vector','matlabvector']. Default is
-%                           'vector'.
-%
-% 'threshold-calc' (optional) specifies how the threshold epsilon will
-% be calculated. There are three options. Set 'threshold-calc' to
-%   - 'fix' The RP is computed under a fixed threshold epsilon specified by
-%           input parameter 'E'.
-%   - 'var' The RP is computed under a fixed threshold epsilon, which
-%           corresponds to the lower 'E'-quantile (specified by input parameter
-%           'E') of the distance distribution of all points in phasespace.
-%   - 'fan' The RP is computed under a variable threshold epsilon using a
-%           fixed amount of nearest neighbours in phasespace to compute the
-%           epsilon-value for each point of the phasespace trajectory
-%           individually.
-% Default is 'fix'.  
-%
-% 'type' (optional) specifies the type of the RP.
-%   - 'normal'      The RP is computed after the definition of Eckmann et
-%                   al.1987
-%   - 'diagonal'    The RP is computed after the definition of Eckmann et
-%                   al.1987 and then line corrected after Kraemer and
-%                   Marwan 2019
-%   - 'shape'       The RP is computed the definition of Eckmann et
-%                   al. 1987 and then shape-converted after J.Donath 2016
-%                   (windowshape 3).
-%
-%    Example:
-%         N = 300; % length of time series
-%         x = .9*sin((1:N)*2*pi/70); % exemplary time series
-%         xVec = embed(x,2,17);
-%         R = rp(xVec,.1);
-%         imagesc(R)
-
-% Copyright (c) 2019
-% Norbert Marwan, Potsdam Institute for Climate Impact Research, Germany
-% http://www.pik-potsdam.de
-% Modified by Hauke Krï¿½mer,Potsdam Institute for Climate Impact Research, 
-% Germany http://www.pik-potsdam.de
-%
-% Contact: hkraemer@pik-potsdam.de
-%
-% This program is free software; you can redistribute it and/or
-% modify it under the terms of the GNU General Public License
-% as published by the Free Software Foundation; either version 2
-% of the License, or any later version.
-
-
-%% check input
-narginchk(1,6)
-nargoutchk(0,3)
-
-algoLib={'loops','vector','matlabvector'}; % the possible algorithms
-try
-    algorithm = varargin{6};
-    if ~isa(algorithm,'char') || ~ismember(algorithm,algoLib)
-        warning(['Specified algorithm should be one of the following possible values:',...
-           10,sprintf('''%s'' ',algoLib{:})])
-    end
-catch
-    algorithm = 'vector';
-end
-
-typeLib={'normal','diagonal','shape'}; % the possible types
-try
-    type = varargin{5};
-    if ~isa(type,'char') || ~ismember(type,typeLib)
-        warning(['Specified RP type should be one of the following possible values:',...
-           10,sprintf('''%s'' ',typeLib{:})])
-    end
-catch
-    type = 'normal';
-end
-
-methLib={'euc','max'}; % the possible norms
-try
-    meth = varargin{4};
-    if ~isa(meth,'char') || ~ismember(meth,methLib)
-       warning(['Specified norm should be one of the following possible values:',...
-           10,sprintf('''%s'' ',methLib{:})])
-    end
-catch
-    meth = 'max';
-end
-
-thresLib={'fix','var','fan'}; % the possible ways of threshold computation
-try
-    thres = varargin{3};
-    if ~isa(thres,'char') || ~ismember(thres,thresLib)
-       warning(['Specified way of calculating threshold should be one of the following possible values:',...
-                                10,sprintf('''%s'' ',thresLib{:})])
-    end
-catch
-    thres = 'fix';
-end
-
-try
-    e = varargin{2};
-catch
-    e = 1;
-end
-
-x = varargin{1};
-
-N = size(x);
-if N(1) < N(2)
-   warning('Embedding dimension is larger than the length of the vector. Please check!')
-end
-
-
-%% init output
-
-%% bind length of input vector in order to have constant iteration bounds while using parallel computing
-M=N(1);
-%% calculate distance matrix
-switch algorithm 
-    case 'loops'
-         %% calculation with loops
-         y = zeros(N(1),N(1));
-         parfor i = 1:M
-               for j = 1:M
-                switch lower(meth)
-                    case 'euc'
-                         d = (x(i,:) - x(j,:)).^2;
-                         y(i,j) = sqrt(sum(d));
-                    otherwise
-                         d = abs(x(i,:) - x(j,:));
-                         y(i,j) = max(d);
-                end
-               end
-         end
-   case 'vector'
-    
-        %% calculation with vectorisation
-        x1 = repmat(x,N(1),1);
-        x2 = reshape(repmat(reshape(x,N(1)*N(2),1),1,N(1))',N(1)*N(1),N(2));
-        switch lower(meth)
-          case 'euc'
-              d = (x1 - x2).^2;
-              y = sqrt(sum(d,2));
-          otherwise
-              d = abs(x1 - x2);
-              y = max(d,[],2);
-        end
-        y = reshape(y,N(1), N(1));   
-        
-    case 'matlabvector'
-      %% calculation with matlab's vectorisation
-      switch lower(meth)
-          case 'euc'
-              y = squareform(pdist(x));
-          otherwise
-              y = squareform(pdist(x,'chebychev'));
-      end
-end
-P = y;
-
-if strcmp(thres,'fix')
-    % apply threshold
-    y = double(y < e);
-    epsilon = e;
-    
-elseif strcmp(thres,'var')    
-    % get lower (e*100)%-quantile of distance-distribution
-    epsilon = quantile(P(:),e);
-    y = double(y < epsilon);        
-
-elseif strcmp(thres,'fan')
-    % compute variable threshold for each point in order to get fixed
-    % number of nearest neighbours
-    q = quantile(P,e); % distance that corresponds to the fraction e of rec. points per column
-    thresholds = repmat(q,N(1),1); % q has to be applied for each row in d
-    % apply individual thresholds
-    epsilon = e;
-    % apply threshold(s)
-    y=double(y<thresholds);
-end
-
-if strcmp(type,'diagonal')
-    [y, ~] = rp_diagonal(y);
-elseif strcmp(type,'shape')
-    y = shape3(y);
-end
-
-end
-
-%%%%% Helper functions %%%%%%
-
-function [Y] = shape3(X)
-%==========================================================================
-%Creates a new window Y with lenght s based on X. All border diagonals have
-%the lenght s in Y.
-%==========================================================================
-s = floor(size(X,1)/2);
-sc = floor(size(X,1)/4);
-Y = zeros(size(X,1));
-for i = 1:s
-    for j = 0:sc-1
-        Y(sc-j+i,sc+j+i) = X(sc-j+i,sc+j+i);
-        Y(sc-j+i,sc+j+i+1) = X(sc-j+i,sc+j+i+1);
-        Y(sc+j+i,sc-j+i) = X(sc+j+i,sc-j+i);
-        Y(sc+j+i,sc-j+i+1) = X(sc+j+i,sc-j+i+1);
-    end
-end
-
-end
 

@@ -29,17 +29,45 @@ Vn1 = 4;
 
 
 %%
-m = 2;
-tau = 1;
-epsilon = 1;
-T = 1;
-L = 2;
-w = 500;
-ws = 50;
-RQA = 1;
+% zeit vektor:
+ t = data_1(:,1);
+ % data vektor:
+ y = data_1(:,2);
+ % embedding dimension
+ m = 2;
+ % time delay
+ tau = 1;
+ % threshold value
+ threshold = 0.05;
+ % Theiler window
+ T = 1;
+ % minimum line length
+ l_min = 2;
+ % window size
+ w = 100;
+ % window step
+ ws = 10;
+ % RQA quantifier you'd like to enlarge in a separate window
+ RQA = 2; % 2 = DET
+ % norm
+ norm = 'euc';
+ % threshold selection method
+ threshold_meth = 'var';
+ % window shape of running window
+ window_shape = 0;
+ % diagonal RP
+ diagonal_RP = 0;
+ % border line correction
+ line_correct = 0;
+ % running window over a global RP
+ running_window = 0;
+ % Show all RQA quantifiers
+ ShowAll = 1;
 
 
- [Z1,Z2,DM] = rqaplot(data_1(:,1),data_1(:,2),m,tau,epsilon,T,L,w,ws,RQA);
+ [Z1,Z2,DM] = rqaplot(t,y,m,tau,threshold,T,l_min,w,ws,RQA,norm,...
+                      threshold_meth,window_shape,diagonal_RP,...
+                      line_correct,running_window,ShowAll);
  
  
  

@@ -1,0 +1,37 @@
+Index	Variable	Source
+		
+1	Empty	Empty		
+2	PC1	Chew Bahir Chew Bahir MSCL Col Ref		
+3	PC2	Chew Bahir MSCL Col Ref		
+4	PC3	Chew Bahir MSCL Col Ref		
+5	PC4	Chew Bahir MSCL Col Ref		
+6	PC5	Chew Bahir MSCL Col Ref		
+7	Al	Chew Bahir XRF		
+8	Ba	Chew Bahir XRF
+9	Ca	Chew Bahir XRF
+10	Cl	Chew Bahir XRF
+11	Fe	Chew Bahir XRF
+12	K	Chew Bahir XRF
+13	Mn	Chew Bahir XRF
+14	Rb	Chew Bahir XRF
+15	S	Chew Bahir XRF
+16	Si	Chew Bahir XRF
+17	Sr	Chew Bahir XRF
+18	Ti	Chew Bahir XRF
+19	Zr	Chew Bahir XRF
+20	Ones	Chew Bahir XRF			
+21	Smectite Group	Chew Bahir Foerster	
+22	Illite Group	Chew Bahir Foerster	
+23	Analcime Group	Chew Bahir Foerster	
+24	Analcime Intensity	Chew Bahir Foerster	
+25	Smectite Inv Group	Chew Bahir Foerster		
+26	Mag Sus	Chew Bahir LacCore		
+27	Grainsize EM1	Chew Bahir Schaebitz
+28	Grainsize EM2	Chew Bahir Schaebitz	
+29	Grainsize EM3	Chew Bahir Schaebitz	
+30	Grainsize EM4	Chew Bahir Schaebitz	
+31	Grainsize EM5	Chew Bahir Schaebitz	
+32	Grainsize Mean	Chew Bahir Schaebitz	
+33	TC	Chew Bahir Schaebitz	
+34	TIC	Chew Bahir Schaebitz	
+35	TOC	Chew Bahir Schaebitz	

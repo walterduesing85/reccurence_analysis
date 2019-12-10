@@ -14,7 +14,7 @@
 12	K	Chew Bahir XRF
 13	Mn	Chew Bahir XRF
 14	Rb	Chew Bahir XRF
-15	S	Chew Bahir XRF
+15	S	Chew Bahir 18XRF
 16	Si	Chew Bahir XRF
 17	Sr	Chew Bahir XRF
 18	Ti	Chew Bahir XRF

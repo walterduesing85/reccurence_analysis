@@ -10,9 +10,9 @@
 clear, clc, %close all
 
 % Select variable to be analyzed from content_of_variable_data.txt.
-varselectnum = 36;
+varselectnum = 27;
 varselectdem = 20;
-
+   
 % Definition of parameter values.
 agemodeloption = 1;     % Choose age model: 
                         % 1=mubawa,2=oxcal,3-5 trauth 550-70, 6-8 merge
@@ -90,7 +90,7 @@ line_correct = 1;
 %     Y(11) = RTE   (recurrence time entropy, i.e., RPDE)
 %     Y(12) = Clust (clustering coefficient)
 %     Y(13) = Trans (transitivity)
-RQA_Select = 12;
+RQA_Select = 2;
 
 % Calculate recurrence plot using the recurrence threshold e and choose
 % threshold-calculation parameter. Set parameter to define the threshold-
