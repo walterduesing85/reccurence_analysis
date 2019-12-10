@@ -1,0 +1,64 @@
+Expedition-------------
+Location Name----------
+LocationID-------------
+Year-------------------
+SiteHole---------------
+Core-------------------
+Tool-------------------
+Section----------------
+SectionID--------------
+Section Depth----------
+Depth. unscaled--------
+Depth. scaled----------
+Splice Depth-----------
+Offset-----------------
+Sec Dep Exc Cur Length-
+Laser Profiler MS------
+MS Point---------------
+Color Reflectance Grey-
+Color Reflectance CIE X
+Color Reflectance CIE Y
+Color Reflectance CIE Z
+Color Reflectance CIE L
+Color Reflectance CIE a
+Color Reflectance CIE b
+Color Reflectance 360nm
+Color Reflectance 370nm
+Color Reflectance 380nm
+Color Reflectance 390nm
+Color Reflectance 400nm
+Color Reflectance 410nm
+Color Reflectance 420nm
+Color Reflectance 430nm
+Color Reflectance 440nm
+Color Reflectance 450nm
+Color Reflectance 460nm
+Color Reflectance 470nm
+Color Reflectance 480nm
+Color Reflectance 490nm
+Color Reflectance 500nm
+Color Reflectance 510nm
+Color Reflectance 520nm
+Color Reflectance 530nm
+Color Reflectance 540nm
+Color Reflectance 550nm
+Color Reflectance 560nm
+Color Reflectance 570nm
+Color Reflectance 580nm
+Color Reflectance 590nm
+Color Reflectance 600nm
+Color Reflectance 610nm
+Color Reflectance 620nm
+Color Reflectance 630nm
+Color Reflectance 640nm
+Color Reflectance 650nm
+Color Reflectance 660nm
+Color Reflectance 670nm
+Color Reflectance 680nm
+Color Reflectance 690nm
+Color Reflectance 700nm
+Color Reflectance 710nm
+Color Reflectance 720nm
+Color Reflectance 730nm
+Color Reflectance 740nm
+Quality Flag-----------
